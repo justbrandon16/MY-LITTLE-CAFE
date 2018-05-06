@@ -81,9 +81,7 @@ div.s1 {
     margin-bottom: 5px;
 }
 
-#London {
-	background-image: url('cake1.jpg')
-	border-color:#FFC8C8;}
+#London {border-color:#FFC8C8;}
 #Paris {border-color:#C8FFC8;}
 #Tokyo {border-color:#E1C8FF;}
 #Oslo {border-color:#E1E1C8;}
