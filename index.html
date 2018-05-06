@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel='stylesheet' href='style.css'>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+</head>
+<body>
+	<div id=login style='float:left'>
+    <form name="login"><br>
+        Username: <input type="text" name="userid" placeholder=' username'/>
+        Password: <input type="password" name="pswrd" placeholder=' minimum 6 character'/>
+        <input type="button" onclick="check(this.form)" value="Login"/>
+        <input type="reset" value="Cancel"/>
+    </form>
+	</div>
+
+	<div style='font-size:2em; float:right; color:grey';>
+	<i class="fab fa-apple-pay"></i>
+	<i class="fab fa-cc-paypal"></i>
+	<i class="fab fa-cc-visa"></i>
+	<i class="fas fa-check-circle"></i>
+
+</div>
+
+
+	<!-- TOP BAR -->
+	<div id="London" class="tabcontent";>
+	  <h3>CHEESE CHIFFON</h3>
+	  <h4>A very light cake made with vegetable oil, eggs, sugar, flour, baking powder, and flavorings.<br><br>&pound25</h4>
+	</div>
+
+	<div id="Paris" class="tabcontent">
+	  <h3>CARROT CAKE</h3>
+	  <h4>A sweet and moist spice cake, full of cut carrots and toasted nuts, and covered in cream cheese icing.<br><br>&pound35</h4> 
+	</div>
+
+	<div id="Tokyo" class="tabcontent">
+	  <h3>CHOCOLATE CAKE</h3>
+	  <h4>Gateau au chocolat; a cake flavored with melted chocolate and cocoa powder.<br><br>&pound25</h4>
+	</div>
+
+	<div id="Oslo" class="tabcontent">
+	  <h3>BUTTER CAKE</h3>
+	  <h4>A cake in which one of the main ingredients is butter, baked alongside sugar, eggs, flour, and baking powder.<br><br>&pound30</h4><br><br>
+	  <p></p>
+	</div>
+
+
+	<button class="tablink" onmouseover="openCity('London', this,'#FFC8C8')" onclick="openCity('London', this, '#FFC8C8')" id="defaultOpen">CHEESE CHIFFON</button>
+	<button class="tablink" onmouseover="openCity('Paris', this, '#C8FFC8')">CARROT CAKE</button>
+	<button class="tablink" onmouseover="openCity('Tokyo', this, '#E1C8FF')">CHOCOLATE CAKE</button>
+	<button class="tablink" onmouseover="openCity('Oslo', this, '#CCFFFF')" >BUTTER CAKE</button>
+
+
+
+
+
+
+<div class='navbar' style="width:195px;height:530px;display:none;background-color:rgba(125,125,225,0.25);">
+
+	<!-- NAVIGATION BAR -->
+	<br><h2>NAVIGATION</h2><br><br>
+	
+	<a href='index.html' style='color=:black; text-decoration:none'>
+	<h3><i class="fas fa-birthday-cake"></i>&nbsp&nbspMAIN</h3></a><br>
+	<a href='about.html' style='color=:black; text-decoration:none'>
+	<h3><i class="fas fa-smile"></i>&nbsp&nbspABOUT</h3></a><br>
+	<a href='news.html' style='color=:black; text-decoration:none'>
+	<h3><i class="fas fa-newspaper"></i>&nbsp&nbspNEWS</h3></a><br>
+	<a href='shop.html' style='color=:black; text-decoration:none'>
+	<h3><i class="fas fa-shopping-bag"></i> &nbsp&nbspSHOP</h3></a><br>
+	<a href='contact.html' style='color=:black; text-decoration:none'>
+	<h3><i class="fas fa-envelope-open"></i>&nbsp&nbspCONTACT</h3></a>
+
+
+</div>
+
+<div class='sect1' style="width:1000px;height:200px;display:none;background-color:rgba(125,125,225,0.25);">
+
+	<!-- SECTION 1 -->
+	<div class='s1'>Cakes hand made with love by our professional chef with over 20 years baking expertise<br><br>Express 24 and 48 hour delivery<br><br>Collect all cakes for free from our area at Trumpington Park and Ride Cambridge</div>
+
+</div>
+
+<div class='sect2' style="width:1000px;height:800px;display:none;background-color:rgba(75,75,225,0.25);">
+
+	<!-- SECTION 2 -->
+	<h2>SECTION 2</h2>
+
+</div>
+
+<div class='sect3' style="width:1000px;height:400px;display:none;background-color:rgba(25,25,225,0.25);">
+
+	<!-- SECTION 3 -->
+	<h2>SECTION 3</h2>
+	<p>WEBSITE DESIGN BY BRANDON NG<br>
+		FIND OUT MORE BY CLICKING ON "ABOUT " ON THE LEFT TAB.</p>
+
+</div>
+
+<!-- FADE FUNCTION BY JQUERY -->
+<script src='jquery-3.3.1.js'></script>
+<script>
+$(document).ready(function () {
+    $('div.navbar').fadeIn(2000).removeClass('hidden');
+    $('div.sect1').fadeIn(2000).removeClass('hidden');
+    $('div.sect2').fadeIn(2000).removeClass('hidden');
+    $('div.sect3').fadeIn(2000).removeClass('hidden');
+});
+</script>
+<script src='script.js'></script>
+
+</body>
+</html>

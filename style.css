@@ -1,0 +1,89 @@
+div.navbar {
+	/*margin-top:18px;*/
+    float:left;
+}
+
+div.sect1, div.sect2, div.sect3 {
+	float: right;
+	padding-bottom: 10px;
+}
+
+body {
+	margin-left:40px;
+	margin-right:40px;
+	font-family: 'cursive';
+	background-color:rgba(255,250,205,0.5);
+
+}
+
+h1 {
+	padding-top:0px;
+	padding-left:40px;
+}
+
+h2{
+	font-size:20px;
+	padding-top:0px;
+	padding-left:20px;
+	text-decoration: underline;
+}
+
+p {
+	font-size:12px;
+	padding-top:0px;
+	padding-left:20px;
+	padding-bottom:0px;
+}
+
+h3,h4 {
+	font-size:18px;
+	padding-left:20px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	color: black;
+}
+
+div.s1 {
+	padding: 40px;
+	text-align: center;
+}
+
+.tablink {
+    background-color: rgb(230,230,190);
+    color: black;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+    margin-bottom: 10px;
+}
+
+.tablink:hover {
+    background-color: #777;
+
+}
+
+/* Style the tab content */
+.tabcontent {
+	border-style: solid;
+	min-height: 200px;
+	max-height: 200px;
+	margin-top:10px;
+	float: right;
+    color: white;
+    display: none;
+    padding: 50px;
+    text-align: center;
+    width:91.65%;
+    margin-bottom: 5px;
+}
+
+#London {
+	background-image: url('cake1.jpg')
+	border-color:#FFC8C8;}
+#Paris {border-color:#C8FFC8;}
+#Tokyo {border-color:#E1C8FF;}
+#Oslo {border-color:#E1E1C8;}
